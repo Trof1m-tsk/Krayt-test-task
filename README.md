@@ -1,2 +1,6 @@
-# Krayt-test-task
-Krayt-test-task
+Выполнить тестовое задание:
+
+Верстка адаптивного лендинга, макет доступен по ссылке - https://www.figma.com/file/gS0qw4gjqhQ0KVjJuWXbzB/Krayt-Test?node-id=0%3A1
+
+– Можно использовать bootsrap.
+– Использовать HTML5, CSS3, препроцессоры, все основные блоки должны быть выделены в тег section.
