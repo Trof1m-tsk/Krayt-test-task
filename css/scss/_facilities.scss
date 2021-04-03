@@ -1,0 +1,159 @@
+.facilities {
+    display: flex;
+    flex-direction: column;
+    width: $large-content-width;
+    margin: $large-section-margin;
+
+    @media (max-width: $big) {
+        width: $big-content-width;
+        margin: $big-section-margin;
+    }
+    
+    @media (max-width: $middle) {
+        width: $middle-content-width;
+        margin: $middle-section-margin;
+    }
+    
+    @media (max-width: $small) {
+        width: $small-content-width;
+        margin: $small-section-margin;
+    }
+    
+    @media (max-width: $tiny) {
+        width: $tiny-content-width;
+        margin: $tiny-section-margin;
+    }
+    
+    @media (max-width: $min) {
+        width: $min-content-width;
+        margin: $min-section-margin;
+    }
+}
+
+.facilities__name {
+    color: $black;
+
+    &::after {
+        background-color: $black;
+    }
+}
+
+.facilites__header {
+    max-width: 570px;
+    color: $blue;
+    margin-bottom: 56px;
+    
+    @media (max-width: $big) {
+        max-width: 70%;
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width: $middle) {
+        margin-bottom: 40px;
+    }
+    
+    @media (max-width: $small) {
+        margin-bottom: 30px;
+    }
+    
+    @media (max-width: $tiny) {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $min) {
+        margin-bottom: 15px;
+    }
+}
+
+.facilities__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: $middle) {
+        overflow: hidden;
+    }
+}
+
+.facilities__btns {
+    display: flex;
+    flex-direction: column;
+}
+
+.facilities__btn {
+    width: 293px;
+    height: 72px;
+    border: none;
+    background-color: white;
+    text-align: left;
+    padding: 24px;
+    font-family: $lato;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+    
+    @media (max-width: $big) {
+        padding: 20px;
+        width: 220px;
+        height: 65px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    @media (max-width: $middle) {
+        padding: 10px;
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    @media (max-width: $small) {
+        padding: 10px;
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    @media (max-width: $tiny) {
+        padding: 10px;
+        width: 140px;
+        height: 50px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    @media (max-width: $min) {
+    }
+}
+
+.facilities__btn--active {
+    background-color: $orange;
+    z-index: 3;
+    background-color: $orange;
+    color: white;
+    box-shadow: 0 5px 10px rgba(255, 87, 34, 0.3);
+}
+
+.facilities__img {
+    width: 730px;
+
+    @media (max-width: $big) {
+        // width: auto;
+        width: 520px;
+    }
+    
+    @media (max-width: $middle) {
+        width: 400px;
+    }
+    
+    @media (max-width: $small) {
+    }
+    
+    @media (max-width: $tiny) {
+    }
+
+    @media (max-width: $min) {
+    }
+}

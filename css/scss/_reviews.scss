@@ -1,0 +1,202 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    width: $large-content-width;
+    margin: $large-section-margin;
+
+    @media (max-width: $big) {
+        width: $big-content-width;
+        margin: $big-section-margin;
+    }
+    
+    @media (max-width: $middle) {
+        width: $middle-content-width;
+        margin: $middle-section-margin;
+    }
+    
+    @media (max-width: $small) {
+        width: $small-content-width;
+        margin: $small-section-margin;
+    }
+    
+    @media (max-width: $tiny) {
+        width: $tiny-content-width;
+        margin: $tiny-section-margin;
+    }
+    
+    @media (max-width: $min) {
+        width: $min-content-width;
+        margin: $min-section-margin;
+    }
+}
+
+.reviews__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reviews__name {
+    color: $black;
+
+    &::after {
+        background-color: $black;
+    }
+}
+
+.reviews__header {
+    max-width: 400px;
+    color: $blue;
+}
+
+.reviews__arrows {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.reviews__list {
+    position: relative;
+    list-style: none;
+    margin-top: 56px;
+    display: flex;
+    width: 400%;
+    
+    @media (max-width: $big) {
+        margin-top: 50px;
+    }
+    
+    @media (max-width: $middle) {
+        margin-top: 40px;
+    }
+    
+    @media (max-width: $small) {
+        margin-top: 30px;
+    }
+    
+    @media (max-width: $tiny) {
+        margin-top: 20px;
+    }
+    
+    @media (max-width: $min) {
+        margin-top: 15px;
+    }
+}
+
+.reviews__rewiew {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 445px;
+    min-height: 393px;
+    padding: 47px 40px 35px;
+    box-sizing: border-box;
+    background-color: $blue;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    
+    @media (max-width: $big) {
+        width: 400px;
+        min-height: 360px;
+        padding: 35px;
+    }
+    
+    @media (max-width: $middle) {
+        width: 320px;
+        min-height: 330px;
+        padding: 30px;
+        
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    
+    @media (max-width: $small) {
+        width: 300px;
+        min-height: 310px;
+        padding: 20px;
+    }
+    
+    @media (max-width: $tiny) {
+        width: 280px;
+        min-height: 260px;
+        padding: 15px;
+    }
+    
+    @media (max-width: $min) {
+        width: 250px;
+        min-height: 250px;
+    }
+}
+
+.reviews__review_text {
+    font-family: $lato;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 10px;
+    
+    @media (max-width: $big) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    @media (max-width: $middle) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    @media (max-width: $tiny) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+.reviews__author {
+    position: relative;
+    padding-left: 72px;
+}
+
+.reviews__author_photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    
+    @media (max-width: $small) {
+        width: 45px;
+        height: 45px;
+    }
+    
+}
+
+.reviews__author_name,
+.reviews__author_job {
+    font-family: $lato;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    
+    @media (max-width: $middle) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @media (max-width: $small) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.reviews__author_name {
+    font-weight: 700;
+}
+
+.reviews__slider_bar {
+    align-self: center;
+    margin-top: 32px;
+}

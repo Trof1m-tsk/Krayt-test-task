@@ -1,0 +1,115 @@
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $large-section-margin;
+    width: $large-content-width;
+
+    @media (max-width: $big) {
+        width: $big-content-width;
+        margin: $big-section-margin;
+    }
+    
+    @media (max-width: $middle) {
+        width: $middle-content-width;
+        margin: $middle-section-margin;
+    }
+    
+    @media (max-width: $small) {
+        width: $small-content-width;
+        margin: $small-section-margin;
+    }
+    
+    @media (max-width: $tiny) {
+        width: $tiny-content-width;
+        margin: $tiny-section-margin;
+    }
+    
+    @media (max-width: $min) {
+        width: $min-content-width;
+        margin: $min-section-margin;
+    }
+}
+
+.users__header {
+    color: $blue;
+    margin-bottom: 24px;
+
+    @media (max-width: $big) {
+        margin-bottom: 20px;
+    }
+    
+    @media (max-width: $middle) {
+        margin-bottom: 15px;
+    }
+    
+    @media (max-width: $small) {
+        margin-bottom: 10px;
+    }
+    
+    @media (max-width: $tiny) {
+        margin-bottom: 5px;
+    }
+
+}
+
+.users__text {
+    font-family: $lato;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $lightgray;
+    margin-bottom: 56px;
+    
+    @media (max-width: $big) {
+        margin-bottom: 45px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    @media (max-width: $middle) {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    @media (max-width: $small) {
+        margin-bottom: 20px;
+    }
+    
+    @media (max-width: $tiny) {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    @media (max-width: $min) {
+        margin-bottom: 10px;
+    }
+}
+
+.users__companies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $middle) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.users__companies img {
+    @media (max-width: $big) {
+    }
+
+    @media (max-width: $big) {
+        width: 125px;
+    }
+
+    @media (max-width: $tiny) {
+        width: 80px;
+    }
+}
